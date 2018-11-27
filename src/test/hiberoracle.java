@@ -41,7 +41,7 @@ public class hiberoracle {
        }
 
     @Test
-    public void testCreate(){
+    public void testAdd(){
         Query query = session.createQuery("from Student ");
         Student studentnew = new Student();
         studentnew.setName("Mona");
