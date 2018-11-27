@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--  mysql账户名  -->
+    <property name="connection.username">c##sleep</property>
+
+    <!--  mysql密码  -->
+    <property name="connection.password">123456</property>
+
+    <property name="connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+    <property name="connection.driver">oracle.jdbc.OracleDriver</property>
+
+    <mapping class="com.big3.pojo.Student"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
